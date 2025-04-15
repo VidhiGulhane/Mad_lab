@@ -1,0 +1,24 @@
+{
+    "name": "My eCommerce Store",
+    "short_name": "eStore",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "description": "An awesome eCommerce PWA for shopping.",
+    "icons": [
+      {
+        "src": "icons/web-app-manifest-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons/web-app-manifest-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

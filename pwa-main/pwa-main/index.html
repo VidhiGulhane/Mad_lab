@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="An awesome eCommerce PWA for all your shopping needs." />
+  <meta name="keywords" content="eCommerce, shopping, PWA, web app, buy, cart" />
+  <meta name="author" content="Your Name or Store" />
+  <meta property="og:title" content="My eCommerce Store" />
+  <meta property="og:description" content="Shop the latest products on our PWA!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="icons/web-app-manifest-512x512.png" />
+  <meta property="og:url" content="https://your-site-url.com" />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/web-app-manifest-192x192.png" />
+  <title>My eCommerce PWA</title>
+</head>
+<body>
+  <h1>🛍️ Welcome to My eCommerce universe!</h1>
+  <p>Enjoy offline shopping experience and add us to your home screen!</p>
+
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("✅ Service Worker registered"))
+        .catch(err => console.error("❌ Service Worker registration failed", err));
+    }
+  </script>
+</body>
+</html>
